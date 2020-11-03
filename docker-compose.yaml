@@ -1,0 +1,15 @@
+version: '3'
+networks:
+  front-end:
+
+services:
+  front:
+    build:
+      context: .
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    networks:
+      - front-end
+    ports:
+      - 8080:3000
