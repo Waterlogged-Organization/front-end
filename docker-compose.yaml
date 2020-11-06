@@ -4,6 +4,7 @@ networks:
 
 services:
   front:
+    container_name: front-end
     build:
       context: .
     volumes:
