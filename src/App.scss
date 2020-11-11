@@ -1,32 +1,5 @@
 @import './commun.scss';
 
-$sidebar-bg-color: $theme_blue;
-$sidebar-color: white;
-$highlight-color: white;
-
-@import '~react-pro-sidebar/dist/scss/styles.scss';
-
-.pro-inner-item:hover{
-    background-color: $theme_dark_blue;
-    transition: ease-in .2s;
-}
-
-.pro-inner-item {
-    padding: 8px 35px 8px 35px !important;
-    font-size: 18px;
-}
-
-.pro-sidebar {
-    height: 100vh;
-    left: -15px;
-    font-size: 21px;
-}
-
-.pro-sidebar-inner {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
 #logo {
     max-width: 40px;
     margin-right: 1rem;
@@ -35,6 +8,7 @@ $highlight-color: white;
 main {
     padding: 24px;
     flex-grow: 1;
+    flex-shrink: 1;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
@@ -42,25 +16,6 @@ main {
 
 .App {
     display: flex;
-    position: relative;
     font-family: Avenir;
+    height: 100vh;
 }
-
-.pro-sidebar-header {
-    padding: 1rem;
-    text-align: center;
-    border-bottom: none !important;
-}
-
-.pro-icon img {
-    max-width: 40px;
-}
-
-.pro-icon-wrapper{
-    width: 50px !important;
-}
-
-.pro-menu-item.active {
-    background-color: $theme_dark_blue;
-}
-

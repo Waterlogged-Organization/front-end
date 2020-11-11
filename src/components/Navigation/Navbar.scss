@@ -1,0 +1,100 @@
+$blue: #0677a1;
+$dark_blue: #045f81;
+
+.sidebar {
+  min-width: 270px;
+  text-align: left;
+  transition: width, left, right, 0.3s;
+  position: relative;
+  z-index: 1009;
+  color:white;
+  font-size: 21px;
+  flex-shrink: 0;
+  height:100%;
+}
+
+.inner-sidebar {
+  position: relative;
+  height: 100%;
+  background-color: $blue;
+  z-index: 1;
+  min-width: 16vw;
+  z-index: 101;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 21px;
+}
+
+.sidebar-layout {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 101;
+}
+
+.sidebar-header {
+  padding: 1rem;
+  text-align: center;
+}
+
+.sidebar-content {
+  flex-grow: 1;
+}
+
+.sidebar-menu ul {
+  list-style-type: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+
+#logo {
+  max-width: 40px;
+  margin-right: 1rem;
+}
+
+.nav-btn {
+  padding: 8px 35px 8px 35px;
+  color: white;
+  display: flex;
+  line-height: 40px;
+}
+
+.nav-btn-icon {
+  margin-right: 1rem;
+  min-width: 40px;
+}
+
+.nav-btn span:hover {
+  text-decoration: none;
+}
+
+.nav-btn:hover .nav-btn-icon {
+  animation: shake 0.5s; 
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-2deg); }
+  20% { transform: rotate(-4deg); }
+  30% { transform: rotate(-2deg); }
+  40% { transform: rotate(0deg); }
+  50% { transform: rotate(2deg); }
+  60% { transform: rotate(4deg); }
+  70% { transform: rotate(-2deg); }
+  80% { transform: rotate(-4deg); }
+  90% { transform: rotate(-2deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.nav-btn:hover,
+.active .nav-btn {
+  background-color: $dark_blue;
+}
+
+.nav-btn img {
+  max-width: 40px;
+}

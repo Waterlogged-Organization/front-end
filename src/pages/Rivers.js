@@ -6,7 +6,7 @@ function Rivers(props) {
   return (
     <div>
       <h1>Rivers</h1>
-      <CardColumns>
+      <CardColumns style={{"display":"flex", "flex-wrap": "wrap", "justify-content":"space-around"}}>
         {dataRiver.map((r) => (
           <River
             image={r.image}
