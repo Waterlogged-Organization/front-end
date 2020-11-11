@@ -8,10 +8,6 @@ import iconKayak from "../../img/icon-kayak.svg";
 import "./RiverCard.scss";
 
 export default class River extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <Card className="card-river" style={{ width: "18rem" }}>
@@ -27,7 +23,7 @@ export default class River extends React.Component {
               time={this.props.time}
             />
 
-            {this.props.paddlers_last_year != 0 && (
+            {this.props.paddlers_last_year !== 0 && (
               <div className="user-last-year">
                 <img src={iconKayak} alt=""></img>
                 <span>
@@ -36,7 +32,7 @@ export default class River extends React.Component {
               </div>
             )}
 
-            {this.props.paddlers_going_soon != 0 && (
+            {this.props.paddlers_going_soon !== 0 && (
               <div className="user-going-soon">
                 <FontAwesomeIcon className="color-blue" icon={faUser} />
                 <span>

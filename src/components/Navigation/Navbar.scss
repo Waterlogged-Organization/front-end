@@ -98,3 +98,30 @@ $dark_blue: #045f81;
 .nav-btn img {
   max-width: 40px;
 }
+
+.mobile-top-bar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  z-index: 1008;
+  display: none;
+  flex-direction: row-reverse;
+  padding: 1rem 0 1rem 0;
+}
+
+#burger-menu-btn {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 2rem;
+}
+
+@media only screen 
+  and (max-device-width: 630px) {
+    .sidebar {
+      position: fixed;
+    }
+    .mobile-top-bar {
+      display: flex;
+    }
+}

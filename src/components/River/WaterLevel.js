@@ -3,10 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 
 export default class WaterLevel extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   levelClasses = {
     Low: "color-green",
     Medium: "color-orange",
