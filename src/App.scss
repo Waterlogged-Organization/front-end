@@ -1,12 +1,13 @@
-$sidebar-bg-color: #0677a1;
+@import './commun.scss';
+
+$sidebar-bg-color: $theme_blue;
 $sidebar-color: white;
 $highlight-color: white;
-$dark_blue: #045f81;
 
 @import '~react-pro-sidebar/dist/scss/styles.scss';
 
 .pro-inner-item:hover{
-    background-color: $dark_blue;
+    background-color: $theme_dark_blue;
     transition: ease-in .2s;
 }
 
@@ -60,6 +61,6 @@ main {
 }
 
 .pro-menu-item.active {
-    background-color: $dark_blue;
+    background-color: $theme_dark_blue;
 }
 

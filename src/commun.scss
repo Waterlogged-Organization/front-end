@@ -1,0 +1,48 @@
+// Themes colors
+$theme_blue: #0677a1;
+$theme_dark_blue: #045f81;
+$theme_orange: #ED8D77;
+$theme_yellow: #F5D89E;
+$theme_dark_yellow: #FCCC6E;
+
+// Level colors
+$level_green: #8DD666;
+$level_orange: #FFC815;
+$level_red: #FF2000;
+
+$blue: #2C70EA;
+
+.color-green {
+    color: $level_green;
+}
+
+.color-orange {
+    color: $level_orange;
+}
+
+.color-red {
+    color: $level_red;
+}
+
+.color-blue {
+    color: $blue;
+}
+
+.color-theme-orange {
+    color: $theme_orange;
+}
+
+.btn-yellow {
+    color: white;
+    background-color: $theme_yellow;
+    border-color: $theme_yellow;
+}
+
+.btn-yellow:hover, 
+.btn-yellow:focus,
+.btn-yellow:visited,
+.btn-yellow:active {
+    background-color: $theme_dark_yellow !important;
+    border-color: $theme_dark_yellow !important;
+}
+
