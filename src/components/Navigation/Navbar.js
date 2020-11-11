@@ -20,9 +20,6 @@ import {
   faUserFriends,
 } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../img/logo.svg";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Container from "react-bootstrap/Container";
 import UserContext from "../User/UserContext";
 import { useContext } from "react";
 
