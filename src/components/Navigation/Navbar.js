@@ -115,7 +115,7 @@ function Navbar(props) {
       )}
 
       <div className="mobile-top-bar">
-        <a onClick={switchSidebarState}>
+        <a href="#" onClick={switchSidebarState}>
           {isSidebarOpen ? (
             <FontAwesomeIcon id="burger-menu-btn" icon={faTimes} />
           ) : (
