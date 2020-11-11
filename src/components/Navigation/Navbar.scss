@@ -110,10 +110,16 @@ $dark_blue: #045f81;
   padding: 1rem 0 1rem 0;
 }
 
+.mobile-top-bar button {
+  border: none;
+  background-color: transparent;
+}
+
 #burger-menu-btn {
   height: 1.5rem;
   width: 1.5rem;
   margin-right: 2rem;
+  color: $blue
 }
 
 @media only screen 
